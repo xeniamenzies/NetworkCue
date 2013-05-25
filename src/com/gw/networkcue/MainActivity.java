@@ -19,8 +19,8 @@ public class MainActivity extends Activity {
 		// final EditText edittextEmailSubject = (EditText)findViewById(R.id.email_subject);
 		// final EditText edittextEmailText = (EditText)findViewById(R.id.email_text);
 
-		final String edittextEmailSubject = "Email Subject" ;
-		final String edittextEmailText = "Email Text";
+		final String edittextEmailSubject = "My Contact Details" ;
+		final String edittextEmailText = "Hi, \n\n Great to meet you. \n I've attached my contact details below. You can import this .vcf file into your phone automatically." ;
 
 		Button buttonSendEmail_intent = (Button)findViewById(R.id.btnEmail);
 
@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
 				intent.putExtra(Intent.EXTRA_EMAIL, emailAddressList);  
 				intent.putExtra(Intent.EXTRA_SUBJECT, emailSubject); 
 				intent.putExtra(Intent.EXTRA_TEXT, emailText); 
-				startActivity(Intent.createChooser(intent, "Choice App to send email:"));
+				startActivity(Intent.createChooser(intent, "Choose App to send email:"));
 
 			}});
 	}
