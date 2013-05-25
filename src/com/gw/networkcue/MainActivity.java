@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
 		// final EditText edittextEmailText = (EditText)findViewById(R.id.email_text);
 
 		final String edittextEmailSubject = "My Contact Details" ;
-		final String edittextEmailText = "Hi, \n\n Great to meet you. \n I've attached my contact details below. You can import this .vcf file into your phone automatically." ;
+		final String edittextEmailText = "Hi, \n\n Great to meet you. \n\n Please add me to your contacts and find me on Linkedin, Facebook, Twitter, or whatever you prefer and let's keep in touch!" ;
 
 		Button buttonSendEmail_intent = (Button)findViewById(R.id.btnEmail);
 
